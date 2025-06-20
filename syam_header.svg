@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <![CDATA[
+      @keyframes fadeInOut {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      .text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 40px;
+        fill: white;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        animation: fadeInOut 4s ease-in-out infinite;
+      }
+
+      .background {
+        fill: url(#grad);
+      }
+    ]]>
+  </style>
+
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fc5c7d" />
+      <stop offset="50%" stop-color="#6a82fb" />
+      <stop offset="100%" stop-color="#05dfd7" />
+    </linearGradient>
+  </defs>
+
+  <rect class="background" width="800" height="120" rx="10" />
+  <text x="400" y="70" class="text">Hello world, I'm Syam 👋</text>
+</svg>
